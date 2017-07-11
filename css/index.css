@@ -1,0 +1,155 @@
+/** Homepage css **/
+@import "fonts.css";
+
+/** Colours **/
+/**
+ * navbar: #69F0AE
+ * sidebar: #7C4DFF
+ * hamburger: #00E676
+ */
+
+/** Apply font-family **/
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/** maximise body's space **/
+html, body, #content-container, #content {
+	width: 100%;
+	height: 100%;
+}
+
+#content-container {
+	padding-left: 10px;
+	padding-bottom: 10px;
+	background-color: #fff;
+	position: relative;
+	margin-left: 50px;
+}
+
+#content {
+	padding-top: 56px;
+}
+
+/** Sidebar **/
+.sidebar {
+	background-color: #7c4dff;
+	color: #fff;
+	height: 100%;
+	width: 200px;
+	min-width: 50px;
+	position: absolute;
+}
+
+.sidebar ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.sidebar ul li {
+	padding: 13.5px;
+}
+.sidebar ul li:hover {
+	background-color: #651FFF;
+}
+
+.sidebar ul li p {
+	color: #fff;
+	display: inline;
+	padding-left: 25px;
+}
+
+.sidebar ul li a, .sidebar ul li a:hover {
+	color: #fff;
+	display: inline;
+	text-decoration: none !important;
+}
+
+.sidebar-active {
+	width: 200px;
+	min-width: 200px;
+}
+
+.sidebar #header {
+	padding: 5px;
+	background-color: #6200EA;
+}
+
+.sidebar #header img {
+	width: 40px;
+	height: 40px;
+}
+
+.sidebar #header p {
+	margin-top: -30px;
+	margin-bottom: 8px;
+	margin-left: 35px;
+	display: block;
+}
+
+.sidebar-active-content {
+	margin-left: 200px !important;
+}
+
+.navbar {
+	background-color: #32c87f;
+	position: fixed;
+	width: 100%;
+	margin-left: -10px;
+	height: 52px;
+	padding: 0;
+}
+
+.navbar ul {
+	list-style-type: none;
+	padding: 0;
+	color: #fff;
+	margin: 0;
+	height: 100%;
+}
+
+.navbar ul #hambuger {
+	background-color: #34b86b;
+}
+
+.navbar ul li {
+	display: inline-block;
+	height: 100%;
+	padding: 13px;
+	min-width: 50px;
+	text-align: center;
+}
+
+.navbar ul li:hover {
+	opacity: 0.75;
+}
+
+.tweets {
+	background-color: #EEEEEE;
+	width: 25%;
+	height: 100%;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+.tweets .header {
+	background-color: #E0E0E0;
+	text-align: center;
+	padding: 10px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.tweets iframe {
+	height: 94.5% !important;
+}
+
+.tweets .header h4 {
+	margin: 0 auto;
+}
+
+.container {
+	margin-left: 25%;
+	width: 75%;
+	top: -100%;
+}

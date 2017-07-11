@@ -1,0 +1,7 @@
+/** Fonts **/
+/** Use these like so:
+	font-family: '<name>', sans-serif;
+	font-weight: <weight>;
+**/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans'); /** Usage: font-family: 'Open Sans', sans-serif; **/
+
