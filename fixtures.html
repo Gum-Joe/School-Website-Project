@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fixtures | Wimbledon</title>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<!-- Our stuff -->
+		<link href="css/index.css" rel="stylesheet"></link>
+	</head>
+	<body>
+		<div class="sidebar">
+			<div class="sidebar-background"></div>
+			<ul>
+				<!-- Sidebar -->
+				<li id="header">
+					<img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Wimbledon.svg/1024px-Wimbledon.svg.png" />
+					<p>WIMBLEDON</p>
+				</li>
+				<li role="button" id="sidebar-home">
+					<a href="index.html">
+						<i class="fa fa-home fa-lg" aria-hidden="true"></i>
+						<p>Home</p>
+					</a>
+				</li>
+				<li role="button" id="sidebar-fixtures">
+					<a href="fixtures.html">
+						<i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+						<p>Fixtures</p>
+					</a>
+				</li>
+				<li role="button" id="sidebar-results">
+					<a href="results.html">
+						<i class="fa fa-line-chart fa-lg" aria-hidden="true"></i>
+						<p>Results</p>
+					</a>
+				</li>
+				<li role="button" id="sidebar-players">
+					<a href="players.html">
+						<i class="fa fa-users fa-lg" aria-hidden="true"></i>
+						<p>Players</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<main id="content-container">
+			<div class="navbar">
+				<ul>
+					<li id="hambuger" role="button" onclick="handleHamburgerClick()"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></li>
+				</ul>
+			</div>
+			<div id="content">
+				<div class="tweets">
+					<div class="header">
+						<h4>Tweets</h4>
+					</div>
+					<a class="twitter-timeline"  href="https://twitter.com/hashtag/Wimbledon" data-widget-id="883669941001519104">#Wimbledon Tweets</a>
+				</div>
+				<div class="container">
+					<!-- NOTE: Content goes here -->
+					<h1>Fixtures</h1>
+					<h5> Here are all the fixes for wimbledon (last updated 11/07/17)</h5>
+					<table class="table table-striped table-bordered fixtures table-sm">
+						<tr class="thead-inverse">
+							<th>Week (start date - 26th June)</th>
+							<th>Fixture</th> 
+						</tr>
+						<tr class="t-row-head-1">
+							<td><strong>First Week<strong></td>
+							<td><!-- Nothing here --></td>
+						</tr>
+						<tr class="t-1">
+							<td>First Monday</td>
+							<td>Gentlemen's singles - first round</td> 
+						</tr>
+						<tr class="t-1">
+							<td>First Tuesday</td>
+							<td>Gentlemen's singles - first round</td> 
+						</tr>
+						<tr class="t-1">
+							<td>First Wedenesday</td>
+							<td>Gentlemen's singles - second round</td>
+						</tr>
+						<tr class="t-1">
+							<td>First Thursday</td>
+							<td>Gentlemen's singles - second round</td>
+						</tr>
+						<tr class="t-1">
+							<td>First Friday</td>
+							<td>Gentlemen's singles - third round</td>
+						</tr>
+						<tr class="t-1">
+							<td>Middle Saturday</td>
+							<td>Gentlemen's singles - third round</td>
+						</tr>
+						<tr class="t-row-head-2"> 
+							<td><strong>Second Week<strong></td>
+							<td><!-- Row header --></td>
+						</tr>
+						<tr class="t-2">
+							<td>Second Monday</td>
+							<td>Gentlemen's singles - fourth round</td>
+						</tr>
+						<tr class="t-2">
+							<td>Second Wedenesday</td>
+							<td>Gentlemen's singles - quarter finals</td>
+						</tr>
+						<tr class="t-2">
+							<td>Second Friday</td>
+							<td>Gentlemen's singles - semi-finals</td>
+						</tr>
+						<tr class="t-2">
+							<td>Second Sunday</td>
+							<td>Gentlemen's singles - finals</td>
+						</tr>	
+					</table>
+				</div>
+			</div>
+		</main>
+
+		<!-- Bootstrap -->
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<!-- Font Awesome -->
+		<script src="https://use.fontawesome.com/226fc019aa.js"></script>
+		<!-- Our script -->
+		<script async src="js/index.js" charset="utf-8"></script>
+		<!-- Script for wimbledon tweets -->
+		<script async>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</body>
+</html>
