@@ -14,9 +14,10 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 /** maximise body's space **/
-html, body, #content-container, #content {
+html, body, #content, #content-container {
 	width: 100%;
 	height: 100%;
+	overflow-x: hidden;
 }
 
 #content-container {
@@ -25,10 +26,11 @@ html, body, #content-container, #content {
 	background-color: #fff;
 	position: relative;
 	margin-left: 50px;
+	width: calc(100% - 10px);
 }
 
-#content {
-	padding-top: 56px;
+#content .container {
+	margin-top: 56px;
 }
 
 /** Sidebar **/
@@ -38,7 +40,7 @@ html, body, #content-container, #content {
 	height: 100%;
 	width: 200px;
 	min-width: 50px;
-	position: absolute;
+	position: fixed;
 }
 
 .sidebar ul {
@@ -98,6 +100,7 @@ html, body, #content-container, #content {
 	margin-left: -10px;
 	height: 52px;
 	padding: 0;
+	z-index: 10;
 }
 
 .navbar ul {
@@ -127,9 +130,11 @@ html, body, #content-container, #content {
 .tweets {
 	background-color: #EEEEEE;
 	width: 25%;
-	height: 100%;
+	height: calc(100% - 66px);
 	border-radius: 15px;
 	padding: 10px;
+	position: absolute;
+	margin-top: 56px;
 }
 
 .tweets .header {
@@ -141,7 +146,7 @@ html, body, #content-container, #content {
 }
 
 .tweets iframe {
-	height: 94.5% !important;
+	height: 95% !important;
 }
 
 .tweets .header h4 {
@@ -150,6 +155,25 @@ html, body, #content-container, #content {
 
 .container {
 	margin-left: 25%;
-	width: 75%;
-	top: -100%;
+	width: 72%;
+}
+
+.t-1 {
+	color: #fff !important;
+	background-color: #4CAF50 !important;
+}
+
+.t-2 {
+	color: #fff !important;
+	background-color: #673AB7 !important;
+}
+
+.t-row-head-1 {
+	color: #fff !important;
+	background-color: #388E3C !important;
+}
+
+.t-row-head-2 {
+	color: #fff !important;
+	background-color: #512DA8 !important;
 }
